@@ -1,0 +1,7 @@
+1)Impotance of NameNode in Hadoop Cluster:
+NameNode is the central part of  HDFS and it is also referred to as the Master. 
+It only stores the metadata of HDFS that is the directory tree of all files in the file system and it also tracks the files across the cluster.
+It does not store the actual data or the dataset but the data itself is actually stored in the DataNodes.
+It also knows the list of the blocks and its location for any file in HDFS and with the help of this,NameNode constructs the file from blocks.
+It is so critical to HDFS and when the NameNode is down and it is a single point failure in Hadoop cluster.
+It is usually configured with a lot of memory (RAM) because the block locations help in main memory.
